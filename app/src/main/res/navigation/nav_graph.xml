@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_home"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.jobmart.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_post"
+        android:name="com.example.jobmart.fragments.PostFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_post">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_notification"
+        android:name="com.example.jobmart.fragments.NotificationsFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_notifications">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.jobmart.fragments.ProfileFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_profile">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.jobmart.fragments.SearchFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_search">
+    </fragment>
+    <activity
+        android:id="@+id/signin"
+        android:name="com.example.jobmart.sign_in"
+        android:label="activity_sign_in"
+        tools:layout="@layout/activity_sign_in" />
+
+
+</navigation>
