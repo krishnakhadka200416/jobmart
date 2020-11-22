@@ -11,7 +11,9 @@ class sign_in : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
         auth = FirebaseAuth.getInstance()
+        btn_signup.setOnClickListener {
 
+        }
     }
 
     public override fun onStart() {
