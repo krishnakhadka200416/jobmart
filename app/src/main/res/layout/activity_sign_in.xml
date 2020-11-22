@@ -17,7 +17,8 @@
         android:hint="Username"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="234dp" />
+        tools:layout_editor_absoluteY="234dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -27,7 +28,8 @@
         android:hint="Password"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="329dp" />
+        tools:layout_editor_absoluteY="329dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/login"
@@ -36,7 +38,8 @@
         android:text="Login"
         app:backgroundTint="#5D568A"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="439dp" />
+        tools:layout_editor_absoluteY="439dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/forgotpassword"
@@ -46,7 +49,8 @@
         app:backgroundTint="#5D568A"
         app:iconTint="#FFFFFF"
         tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="500dp" />
+        tools:layout_editor_absoluteY="500dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/signup"
@@ -55,7 +59,8 @@
         android:text="No Account? Sign Up Now"
         app:backgroundTint="#5D568A"
         tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="628dp" />
+        tools:layout_editor_absoluteY="628dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -69,5 +74,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="100dp" />
+        tools:layout_editor_absoluteY="100dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

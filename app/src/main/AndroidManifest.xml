@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JobMart">
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUp"></activity>
+        <activity android:name=".SignIn" />
 
         <activity
             android:name=".MainActivity"

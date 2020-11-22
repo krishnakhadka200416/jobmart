@@ -6,14 +6,21 @@ import android.os.Bundle
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class SignIn : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
         auth = FirebaseAuth.getInstance()
+
+       signup.setOnClickListener{
+           startActivity(Intent(this,SignUp::class.java))
+           finish()
+       }
 
     }
 
