@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "763801125823",
+    "firebase_url": "https://jobmart-f32b4.firebaseio.com",
+    "project_id": "jobmart-f32b4",
+    "storage_bucket": "jobmart-f32b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763801125823:android:e7c07776f4a4034808170a",
+        "android_client_info": {
+          "package_name": "com.JobMart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763801125823-bqnvr2q4jc7lou31ev8qg17l1fr5m386.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr1Bfrtj0y5m4kIqzQ9Atv2SyrOUVWgUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763801125823-bqnvr2q4jc7lou31ev8qg17l1fr5m386.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763801125823:android:6efd1f50cefd831208170a",
+        "android_client_info": {
+          "package_name": "com.Jobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763801125823-bqnvr2q4jc7lou31ev8qg17l1fr5m386.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr1Bfrtj0y5m4kIqzQ9Atv2SyrOUVWgUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763801125823-bqnvr2q4jc7lou31ev8qg17l1fr5m386.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763801125823:android:6ebb892ca1106f1b08170a",
+        "android_client_info": {
+          "package_name": "com.example.jobmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763801125823-bqnvr2q4jc7lou31ev8qg17l1fr5m386.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr1Bfrtj0y5m4kIqzQ9Atv2SyrOUVWgUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763801125823-bqnvr2q4jc7lou31ev8qg17l1fr5m386.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
