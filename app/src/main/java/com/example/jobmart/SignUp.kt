@@ -1,10 +1,12 @@
 package com.example.jobmart
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUp : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -13,20 +15,20 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
         auth = FirebaseAuth.getInstance()
-        signup.setOnClickListener{
+        register.setOnClickListener{
             signupuser()
 
         }
     }
-    fun signupuser(){
-        if(userName.text.toString().isEmpty()){
-            userName.error = "Please enter email"
-            userName.requestFocus()
+    private fun signupuser(){
+        if(email.text.toString().isEmpty()){
+            email.error = "Please enter email"
+            email.requestFocus()
             return
         }
-        if(!Patterns.EMAIL_ADDRESS.matcher(userName.text.toString()).matches()){
-            userName.error = "Please enter email"
-            userName.requestFocus()
+        if(!Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()){
+            email.error = "Please enter email"
+            email.requestFocus()
             return
         }
         if(password.text.toString().isEmpty()){
@@ -34,5 +36,17 @@ class SignUp : AppCompatActivity() {
             password.requestFocus()
             return
         }
+        auth.createUserWithEmailAndPassword(email.text.toString(), password.text.toString())
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    startActivity(Intent(this,MainActivity::class.java))
+                    finish()
+                } else {
+                    Toast.makeText(baseContext, "Authentication failed.",
+                        Toast.LENGTH_SHORT).show()
+
+                }
+
+            }
     }
 }
