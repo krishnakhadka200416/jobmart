@@ -19,11 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_main.*
-import android.view.Window
-
-
-import kotlinx.android.synthetic.main.activity_sign_up.*
-
+import kotlinx.android.synthetic.main.activity_sign_in.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -35,23 +31,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        auth = FirebaseAuth.getInstance()
-        val btn_click_me = findViewById(R.id.signup) as Button
-        btn_click_me.setOnClickListener{
-            startActivity(Intent(this, SignUp::class.java))
 
+
+        logout.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(this, SignIn::class.java))
+            finish()
         }
 
     }
 
-    public override fun onStart() {
-        super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser:FirebaseUser? = auth.currentUser
-        updateUI(currentUser)
-    }
-    fun updateUI(currentUser: FirebaseUser?){
 
-
-    }
 }
