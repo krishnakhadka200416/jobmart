@@ -37,9 +37,14 @@
     </fragment>
     <activity
         android:id="@+id/signin"
-        android:name="com.example.jobmart.sign_in"
+        android:name="com.example.jobmart.SignIn"
         android:label="activity_sign_in"
         tools:layout="@layout/activity_sign_in" />
+    <activity
+        android:id="@+id/signup"
+        android:name="com.example.jobmart.SignUp"
+        android:label="activity_sign_in"
+        tools:layout="@layout/activity_sign_up" />
 
 
 </navigation>
