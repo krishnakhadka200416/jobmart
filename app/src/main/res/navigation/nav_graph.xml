@@ -10,6 +10,7 @@
         android:name="com.example.jobmart.fragments.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home">
+
     </fragment>
     <fragment
         android:id="@+id/navigation_post"
@@ -37,7 +38,7 @@
     </fragment>
     <activity
         android:id="@+id/signin"
-        android:name="com.example.jobmart.sign_in"
+        android:name="com.example.jobmart.SignIn"
         android:label="activity_sign_in"
         tools:layout="@layout/activity_sign_in" />
 

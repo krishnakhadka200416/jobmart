@@ -21,7 +21,7 @@
         android:title="Profile" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_notification"
         android:icon="@drawable/heart"
         android:title="Notification" />
 
