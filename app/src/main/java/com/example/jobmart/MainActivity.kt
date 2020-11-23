@@ -38,10 +38,10 @@ class MainActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
         val btn_click_me = findViewById(R.id.signup) as Button
-        btn_click_me.setOnClickListener{
-            startActivity(Intent(this, SignUp::class.java))
-
-        }
+            btn_click_me.setOnClickListener{
+                startActivity(Intent(this, SignUp::class.java))
+                finish()
+            }
 
     }
 

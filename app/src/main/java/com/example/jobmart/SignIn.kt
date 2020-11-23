@@ -6,7 +6,7 @@ import android.os.Bundle
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_sign_in.*
 
 
 class SignIn : AppCompatActivity() {
