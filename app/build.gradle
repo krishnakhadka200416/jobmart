@@ -71,4 +71,7 @@ dependencies {
     def recyclerview_version = "1.0.0"
     implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
     implementation "androidx.cardview:cardview:1.0.0"
+
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }

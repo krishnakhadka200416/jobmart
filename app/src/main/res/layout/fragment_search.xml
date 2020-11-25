@@ -22,7 +22,8 @@
         android:layout_below="@+id/app_bar_layout_search"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="55dp"
-        android:layout_marginBottom="-2dp">
+        android:visibility="visible"
+        android:layout_marginBottom="20dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 <RelativeLayout
