@@ -1,11 +1,14 @@
 package com.example.jobmart.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.jobmart.AccountSettingActivity
 import com.example.jobmart.R
+import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -37,7 +40,9 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
-
+        view.edit_type.setOnClickListener {
+           startActivity(Intent(context,AccountSettingActivity::class.java))
+        }
         return view
     }
 
